@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="212.271">
+    <testcase classname="NHS Job Search Functionality" name="Job Search using Search Link (Go to search) on NHS Jobs Website" time="139.106">
+        <system-out><![CDATA[Given I am on the NHS Jobs website homepage.................................passed
+When I verify the title of the homepage.....................................passed
+When I click on the Go to search link.......................................passed
+And I enter "Nurse" in the search box.......................................passed
+And I select "Sunderland" from the location dropdown........................passed
+And I click on the Search button............................................passed
+Then I should see search results for jobs matching "Nurse" and "Sunderland".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="NHS Job Search Functionality" name="Sort NHS Job Search Results by newest Date Posted" time="72.17">
+        <system-out><![CDATA[Given I am on the NHS Jobs website homepage.................................passed
+When I click on the Go to search link.......................................passed
+And I enter "Nurse" in the search box.......................................passed
+And I select "Sunderland" from the location dropdown........................passed
+And I click on the Search button............................................passed
+When I choose to sort the results by date posted............................passed
+Then the search results should be rearranged to display the most recently posted jobs first.passed
+]]></system-out>
+    </testcase>
+</testsuite>
